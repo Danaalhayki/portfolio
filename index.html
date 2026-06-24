@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body data-page="home">
   <header class="site-header">
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <nav class="nav" aria-label="Main navigation">
-      <a href="index.html" class="nav-logo">tech.portfolio</a>
+      <a href="index.html" class="nav-logo"><span class="logo-mark" aria-hidden="true"></span> Portfolio</a>
       <div class="nav-links-wrap">
         <ul class="nav-links">
           <li><a href="index.html#about" data-nav="home">About</a></li>
@@ -73,28 +73,32 @@
               </div>
             </div>
           </div>
-          <aside class="hero-panel reveal" aria-hidden="true">
-            <div class="code-panel">
-              <div class="code-panel-header">
-                <span class="code-panel-dot"></span>
-                <span class="code-panel-dot"></span>
-                <span class="code-panel-dot"></span>
-                <span class="code-panel-title">portfolio.ts</span>
+          <aside class="hero-panel reveal">
+            <div class="showcase-card">
+              <div class="showcase-visual" aria-hidden="true">
+                <div class="showcase-ring"></div>
+                <div class="showcase-ring"></div>
+                <div class="showcase-orbit">
+                  <span class="showcase-orbit-dot"></span>
+                </div>
+                <div class="showcase-orbit">
+                  <span class="showcase-orbit-dot showcase-orbit-dot--green"></span>
+                </div>
               </div>
-              <pre class="code-panel-body"><code><span class="c-keyword">const</span> <span class="c-fn">engineer</span> = {
-  <span class="c-fn">role</span>: <span class="c-string">"Technical Specialist"</span>,
-  <span class="c-fn">focus</span>: [
-    <span class="c-string">"Software Engineering"</span>,
-    <span class="c-string">"System Design"</span>,
-    <span class="c-string">"Tech Research"</span>
-  ],
-  <span class="c-fn">build</span>(<span class="c-fn">idea</span>) {
-    <span class="c-keyword">return</span> <span class="c-fn">ship</span>(idea);
-  }
-};
-
-<span class="c-comment">// Ready to collaborate</span>
-<span class="c-fn">engineer</span>.<span class="c-fn">build</span>(<span class="c-string">"your next project"</span>);</code></pre>
+              <div class="showcase-body">
+                <h3 class="showcase-title">Core Focus</h3>
+                <ul class="showcase-list">
+                  <li><span class="showcase-bullet" aria-hidden="true"></span> Software Engineering</li>
+                  <li><span class="showcase-bullet" aria-hidden="true"></span> System Design</li>
+                  <li><span class="showcase-bullet" aria-hidden="true"></span> Technical Research</li>
+                </ul>
+                <div class="showcase-tags">
+                  <span>Cloud</span>
+                  <span>APIs</span>
+                  <span>Security</span>
+                  <span>AI</span>
+                </div>
+              </div>
             </div>
           </aside>
         </div>
@@ -104,7 +108,7 @@
     <section id="about" class="section">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-label">About</p>
+          <p class="section-label"><span class="section-num">01</span> About</p>
           <h2 class="section-title">Technical background</h2>
         </div>
         <div class="about-grid">
@@ -149,7 +153,7 @@
     <section id="projects" class="section section-alt">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-label">Work</p>
+          <p class="section-label"><span class="section-num">02</span> Work</p>
           <h2 class="section-title">Technical Work</h2>
           <p class="section-intro">Software I've built and technology topics I've researched in depth.</p>
         </div>
@@ -179,7 +183,7 @@
     <section id="skills" class="section">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-label">Skills</p>
+          <p class="section-label"><span class="section-num">03</span> Skills</p>
           <h2 class="section-title">Technical Stack</h2>
         </div>
         <div class="skills-grid">
@@ -219,7 +223,7 @@
     <section id="contact" class="section section-alt">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-label">Contact</p>
+          <p class="section-label"><span class="section-num">04</span> Contact</p>
           <h2 class="section-title">Get in Touch</h2>
           <p class="section-intro">Interested in a technical collaboration or engineering role? Reach out.</p>
         </div>
@@ -253,7 +257,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-brand">tech.portfolio</span>
+        <span class="footer-brand"><span class="logo-mark" aria-hidden="true"></span> Portfolio</span>
         <ul class="footer-links">
           <li><a href="index.html#about">About</a></li>
           <li><a href="reports.html">Tech Reports</a></li>
