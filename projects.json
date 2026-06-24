@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "ml-healthcare",
+    "title": "Machine Learning in Healthcare",
+    "description": "A comprehensive report analyzing the applications of machine learning in diagnostic imaging, patient outcome prediction, and clinical decision support systems.",
+    "content": [
+      "This report examines how machine learning is transforming healthcare delivery, from early disease detection to personalized treatment plans.",
+      "Key areas covered include diagnostic imaging (X-ray, MRI, CT analysis), predictive models for patient readmission, and ethical considerations around data privacy and algorithmic bias.",
+      "The analysis draws on peer-reviewed literature and case studies from leading hospitals implementing AI-assisted workflows."
+    ],
+    "category": "report",
+    "link": "https://github.com/yourusername/ml-healthcare-report",
+    "tags": ["Machine Learning", "Healthcare", "Research"]
+  },
+  {
+    "slug": "cybersecurity-2025",
+    "title": "Cybersecurity Threat Landscape 2025",
+    "description": "An in-depth research report covering emerging cyber threats, attack vectors, and recommended mitigation strategies for enterprise environments.",
+    "content": [
+      "This report maps the evolving threat landscape facing organizations in 2025, including ransomware-as-a-service, supply chain attacks, and AI-powered phishing campaigns.",
+      "Each threat category includes real-world examples, impact assessments, and practical mitigation strategies aligned with NIST and ISO frameworks.",
+      "Intended for security teams and IT leaders planning defense-in-depth strategies for cloud and hybrid environments."
+    ],
+    "category": "report",
+    "link": "https://github.com/yourusername/cybersecurity-report",
+    "tags": ["Cybersecurity", "Enterprise", "Research"]
+  },
+  {
+    "slug": "distributed-systems",
+    "title": "Distributed Systems Architecture",
+    "description": "Technical analysis of microservices, event-driven design, scalability patterns, and trade-offs in modern distributed software systems.",
+    "content": [
+      "This report breaks down how large-scale applications are built using microservices, message queues, and service meshes to handle growth and fault tolerance.",
+      "Topics include CAP theorem trade-offs, consistency models, load balancing, caching strategies, and observability with metrics, logs, and tracing.",
+      "Intended for engineers designing or migrating systems to cloud-native, distributed architectures."
+    ],
+    "category": "report",
+    "link": "https://github.com/yourusername/distributed-systems-report",
+    "tags": ["Architecture", "Cloud", "Backend"]
+  },
+  {
+    "slug": "task-manager",
+    "title": "Task Manager App",
+    "description": "A full-stack task management application with user authentication, drag-and-drop boards, and real-time updates built with React and Node.js.",
+    "content": [
+      "A Kanban-style task manager built with React on the frontend and Node.js/Express on the backend, with MongoDB for data persistence.",
+      "Features include user authentication (JWT), drag-and-drop boards, task assignments, due dates, and real-time updates via WebSockets.",
+      "The project demonstrates full-stack architecture, REST API design, and responsive UI patterns."
+    ],
+    "category": "coding",
+    "link": "https://github.com/yourusername/task-manager",
+    "tags": ["React", "Node.js", "MongoDB"]
+  },
+  {
+    "slug": "weather-dashboard",
+    "title": "Weather Dashboard",
+    "description": "A responsive weather dashboard that fetches live data from a public API, featuring location search, 7-day forecasts, and dark mode.",
+    "content": [
+      "A clean, responsive weather app that pulls live data from the OpenWeatherMap API with geolocation and manual city search.",
+      "Displays current conditions, hourly trends, and a 7-day forecast with intuitive icons and temperature charts.",
+      "Built with vanilla JavaScript and CSS, featuring a dark/light mode toggle and fully mobile-responsive layout."
+    ],
+    "category": "coding",
+    "link": "https://github.com/yourusername/weather-dashboard",
+    "tags": ["JavaScript", "API", "CSS"]
+  },
+  {
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "description": "This technical portfolio — a static, JSON-driven site for showcasing software projects and tech reports on GitHub Pages.",
+    "content": [
+      "A static technical portfolio where all project data lives in a single JSON file, making updates quick and version-controlled.",
+      "Separate sections for tech reports and software projects, with individual detail pages for each entry.",
+      "Deployed on GitHub Pages with no build step — HTML, CSS, and JavaScript only."
+    ],
+    "category": "coding",
+    "link": "https://github.com/yourusername/portfolio",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="In-depth technical reports on software, security, AI, and engineering topics.">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>Tech Reports — Technical Portfolio</title>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body data-page="reports">
+  <header class="site-header">
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">tech.portfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about" data-nav="home">About</a></li>
+        <li><a href="reports.html" data-nav="reports">Tech Reports</a></li>
+        <li><a href="coding.html" data-nav="coding">Software</a></li>
+        <li><a href="index.html#skills" data-nav="home">Skills</a></li>
+        <li><a href="index.html#contact" data-nav="home">Contact</a></li>
+      </ul>
+      <div class="nav-end">
+        <button type="button" class="theme-toggle" aria-label="Switch theme">
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label">Tech Reports</p>
+        <h1 class="page-hero-title">Technology Research &amp; Analysis</h1>
+        <p class="page-hero-description">
+          Deep dives into software engineering, security, AI, and infrastructure.
+          <strong id="page-project-count">—</strong> reports.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div id="projects-list" class="projects-grid" aria-live="polite">
+          <p class="loading">Loading projects…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">tech.portfolio</span>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="reports.html">Tech Reports</a></li>
+          <li><a href="coding.html">Software</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

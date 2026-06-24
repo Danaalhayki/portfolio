@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technical portfolio — software engineering, systems, and in-depth tech reports.">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>Technical Portfolio</title>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">tech.portfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about" data-nav="home">About</a></li>
+        <li><a href="reports.html" data-nav="reports">Tech Reports</a></li>
+        <li><a href="coding.html" data-nav="coding">Software</a></li>
+        <li><a href="index.html#skills" data-nav="home">Skills</a></li>
+        <li><a href="index.html#contact" data-nav="home">Contact</a></li>
+      </ul>
+      <div class="nav-end">
+        <button type="button" class="theme-toggle" aria-label="Switch theme" title="Toggle theme">
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <p class="hero-greeting">Hello, I'm <em>Your Name</em></p>
+          <h1 class="hero-title">Building reliable technology at scale</h1>
+          <p class="hero-subtitle">Technical Specialist</p>
+          <p class="hero-description">
+            I design software systems, ship production code, and document complex
+            technology through in-depth technical reports — from architecture to deployment.
+          </p>
+          <div class="hero-actions">
+            <a href="reports.html" class="btn btn-primary">Tech Reports</a>
+            <a href="coding.html" class="btn btn-secondary">Software Projects</a>
+          </div>
+          <div class="hero-stats" id="hero-stats">
+            <div class="hero-stat">
+              <strong id="stat-reports">—</strong>
+              <span>Tech Reports</span>
+            </div>
+            <div class="hero-stat">
+              <strong id="stat-coding">—</strong>
+              <span>Software</span>
+            </div>
+            <div class="hero-stat">
+              <strong id="stat-total">—</strong>
+              <span>Total</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">About</p>
+          <h2 class="section-title">Technical background</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo-col reveal">
+            <div class="about-photo-frame">
+              <img src="assets/profile.webp" alt="Your Name" class="about-photo" width="240" height="300" loading="lazy">
+            </div>
+            <p class="about-photo-caption">Open to technical roles</p>
+          </div>
+          <div class="about-right">
+            <div class="about-content reveal">
+              <p>
+                I'm a technical specialist focused on software engineering, system design,
+                and technology research. I work across the stack — from APIs and databases
+                to front-end interfaces and cloud deployment.
+              </p>
+              <p>
+                I stay current with emerging tech through hands-on projects, technical
+                documentation, and deep-dive reports on topics like security, AI, and
+                distributed systems.
+              </p>
+            </div>
+            <div class="about-highlights">
+              <div class="about-highlight reveal">
+                <h4>Software Engineering</h4>
+                <p>Production-ready code, clean architecture, and maintainable systems.</p>
+              </div>
+              <div class="about-highlight reveal">
+                <h4>Technical Research</h4>
+                <p>In-depth reports on technology trends, tools, and engineering practices.</p>
+              </div>
+              <div class="about-highlight reveal">
+                <h4>Systems &amp; Infrastructure</h4>
+                <p>APIs, cloud services, automation, and performance-focused solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Work</p>
+          <h2 class="section-title">Technical Work</h2>
+          <p class="section-intro">Software I've built and technology topics I've researched in depth.</p>
+        </div>
+
+        <div class="project-category reveal">
+          <div class="category-header">
+            <h3 class="category-title">Tech Reports</h3>
+            <a href="reports.html" class="view-all-link">View all <span class="link-arrow" aria-hidden="true">→</span></a>
+          </div>
+          <div id="report-projects" class="projects-grid" aria-live="polite">
+            <p class="loading">Loading projects…</p>
+          </div>
+        </div>
+
+        <div class="project-category reveal">
+          <div class="category-header">
+            <h3 class="category-title">Software Projects</h3>
+            <a href="coding.html" class="view-all-link">View all <span class="link-arrow" aria-hidden="true">→</span></a>
+          </div>
+          <div id="coding-projects" class="projects-grid" aria-live="polite">
+            <p class="loading">Loading projects…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Skills</p>
+          <h2 class="section-title">Technical Stack</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Programming</h3>
+            <ul class="skill-tags">
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frameworks &amp; Tools</h3>
+            <ul class="skill-tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Git</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Technology</h3>
+            <ul class="skill-tags">
+              <li>Cloud</li>
+              <li>Linux</li>
+              <li>Docker</li>
+              <li>Cybersecurity</li>
+              <li>System Design</li>
+              <li>Technical Writing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-intro">Interested in a technical collaboration or engineering role? Reach out.</p>
+        </div>
+        <div class="contact-grid reveal">
+          <a href="mailto:your.email@example.com" class="contact-link">
+            <span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">your.email@example.com</span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/yourusername</span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/yourprofile</span>
+            </span>
+            <span class="link-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">tech.portfolio</span>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="reports.html">Tech Reports</a></li>
+          <li><a href="coding.html">Software</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
