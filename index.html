@@ -17,13 +17,15 @@
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <nav class="nav" aria-label="Main navigation">
       <a href="index.html" class="nav-logo">tech.portfolio</a>
-      <ul class="nav-links">
-        <li><a href="index.html#about" data-nav="home">About</a></li>
-        <li><a href="reports.html" data-nav="reports">Tech Reports</a></li>
-        <li><a href="coding.html" data-nav="coding">Software</a></li>
-        <li><a href="index.html#skills" data-nav="home">Skills</a></li>
-        <li><a href="index.html#contact" data-nav="home">Contact</a></li>
-      </ul>
+      <div class="nav-links-wrap">
+        <ul class="nav-links">
+          <li><a href="index.html#about" data-nav="home">About</a></li>
+          <li><a href="reports.html" data-nav="reports">Tech Reports</a></li>
+          <li><a href="coding.html" data-nav="coding">Software</a></li>
+          <li><a href="index.html#skills" data-nav="home">Skills</a></li>
+          <li><a href="index.html#contact" data-nav="home">Contact</a></li>
+        </ul>
+      </div>
       <div class="nav-end">
         <button type="button" class="theme-toggle" aria-label="Switch theme" title="Toggle theme">
           <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
@@ -39,32 +41,62 @@
   <main>
     <section id="hero" class="hero">
       <div class="container">
-        <div class="hero-inner">
-          <p class="hero-greeting">Hello, I'm <em>Your Name</em></p>
-          <h1 class="hero-title">Building reliable technology at scale</h1>
-          <p class="hero-subtitle">Technical Specialist</p>
-          <p class="hero-description">
-            I design software systems, ship production code, and document complex
-            technology through in-depth technical reports — from architecture to deployment.
-          </p>
-          <div class="hero-actions">
-            <a href="reports.html" class="btn btn-primary">Tech Reports</a>
-            <a href="coding.html" class="btn btn-secondary">Software Projects</a>
+        <div class="hero-layout">
+          <div class="hero-inner">
+            <div class="hero-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              Open to opportunities
+            </div>
+            <p class="hero-greeting">Hello, I'm <em>Your Name</em></p>
+            <h1 class="hero-title">Building <span class="text-gradient">reliable technology</span> at scale</h1>
+            <p class="hero-subtitle">Technical Specialist</p>
+            <p class="hero-description">
+              I design software systems, ship production code, and document complex
+              technology through in-depth technical reports — from architecture to deployment.
+            </p>
+            <div class="hero-actions">
+              <a href="reports.html" class="btn btn-primary">Tech Reports</a>
+              <a href="coding.html" class="btn btn-secondary">Software Projects</a>
+            </div>
+            <div class="hero-stats" id="hero-stats">
+              <div class="hero-stat">
+                <strong id="stat-reports">—</strong>
+                <span>Tech Reports</span>
+              </div>
+              <div class="hero-stat">
+                <strong id="stat-coding">—</strong>
+                <span>Software</span>
+              </div>
+              <div class="hero-stat">
+                <strong id="stat-total">—</strong>
+                <span>Total</span>
+              </div>
+            </div>
           </div>
-          <div class="hero-stats" id="hero-stats">
-            <div class="hero-stat">
-              <strong id="stat-reports">—</strong>
-              <span>Tech Reports</span>
+          <aside class="hero-panel reveal" aria-hidden="true">
+            <div class="code-panel">
+              <div class="code-panel-header">
+                <span class="code-panel-dot"></span>
+                <span class="code-panel-dot"></span>
+                <span class="code-panel-dot"></span>
+                <span class="code-panel-title">portfolio.ts</span>
+              </div>
+              <pre class="code-panel-body"><code><span class="c-keyword">const</span> <span class="c-fn">engineer</span> = {
+  <span class="c-fn">role</span>: <span class="c-string">"Technical Specialist"</span>,
+  <span class="c-fn">focus</span>: [
+    <span class="c-string">"Software Engineering"</span>,
+    <span class="c-string">"System Design"</span>,
+    <span class="c-string">"Tech Research"</span>
+  ],
+  <span class="c-fn">build</span>(<span class="c-fn">idea</span>) {
+    <span class="c-keyword">return</span> <span class="c-fn">ship</span>(idea);
+  }
+};
+
+<span class="c-comment">// Ready to collaborate</span>
+<span class="c-fn">engineer</span>.<span class="c-fn">build</span>(<span class="c-string">"your next project"</span>);</code></pre>
             </div>
-            <div class="hero-stat">
-              <strong id="stat-coding">—</strong>
-              <span>Software</span>
-            </div>
-            <div class="hero-stat">
-              <strong id="stat-total">—</strong>
-              <span>Total</span>
-            </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -80,7 +112,7 @@
             <div class="about-photo-frame">
               <img src="assets/profile.webp" alt="Your Name" class="about-photo" width="240" height="300" loading="lazy">
             </div>
-            <p class="about-photo-caption">Open to technical roles</p>
+            <p class="about-photo-caption"><span class="status-dot" aria-hidden="true"></span> Open to technical roles</p>
           </div>
           <div class="about-right">
             <div class="about-content reveal">

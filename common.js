@@ -105,17 +105,17 @@ function initThemeToggle() {
 
 function initNavigation() {
   const toggle = document.querySelector(".nav-toggle");
-  const navLinks = document.querySelector(".nav-links");
-  if (!toggle || !navLinks) return;
+  const navMenu = document.querySelector(".nav-links-wrap") || document.querySelector(".nav-links");
+  if (!toggle || !navMenu) return;
 
   toggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("nav-open");
+    const isOpen = navMenu.classList.toggle("nav-open");
     toggle.setAttribute("aria-expanded", isOpen);
   });
 
-  navLinks.querySelectorAll("a").forEach((link) => {
+  navMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      navLinks.classList.remove("nav-open");
+      navMenu.classList.remove("nav-open");
       toggle.setAttribute("aria-expanded", "false");
     });
   });
