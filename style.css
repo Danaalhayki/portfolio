@@ -505,12 +505,10 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
 }
 
 .hero-stats {
-  margin-top: 2.5rem;
-  max-width: 420px;
+  width: 100%;
   padding: 1.15rem 1.25rem 1rem;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -623,7 +621,12 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---- Hero showcase card ---- */
-.hero-panel { position: relative; }
+.hero-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
 
 .showcase-card {
   background: var(--glass);
@@ -1556,7 +1559,8 @@ html.theme-transition *::after {
 
   .hero-panel { order: -1; }
 
-  .showcase-card { max-width: 420px; }
+  .showcase-card,
+  .hero-stats { max-width: 420px; }
 }
 
 @media (max-width: 768px) {
