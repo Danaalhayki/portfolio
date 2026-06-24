@@ -28,6 +28,12 @@ async function loadHomeProjects() {
     animateCounter(document.getElementById("stat-coding"), coding.length);
     animateCounter(document.getElementById("stat-total"), projects.length);
 
+    const statsBar = document.getElementById("hero-stats-bar");
+    if (statsBar && projects.length > 0) {
+      statsBar.style.setProperty("--reports-pct", `${(reports.length / projects.length) * 100}%`);
+      statsBar.style.setProperty("--coding-pct", `${(coding.length / projects.length) * 100}%`);
+    }
+
     renderProjects(reportContainer, reports.slice(0, 3), "No tech reports yet.");
     renderProjects(codingContainer, coding.slice(0, 3), "No software projects yet.");
   } catch (error) {
