@@ -79,7 +79,7 @@ async function loadProjectDetail() {
       return;
     }
 
-    document.title = `${project.title} — Technical Portfolio`;
+    document.title = `${project.title} — Dana Hussain AlHayki`;
     container.innerHTML = `<div class="project-detail-wrap reveal">${renderProjectDetail(project)}</div>`;
     observeRevealElements(container);
 
@@ -102,6 +102,8 @@ function renderProjectDetail(project) {
     .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
     .join("");
 
+  const hasExternalLink = project.link && project.link !== "#";
+
   return `
     <a href="${backUrl}" class="back-link"><span aria-hidden="true">&larr;</span> ${backLabel}</a>
     <span class="project-badge">${isReport ? "Tech Report" : "Software"}</span>
@@ -112,9 +114,9 @@ function renderProjectDetail(project) {
       ${contentHtml}
     </div>
     <div class="project-detail-actions">
-      <a href="${escapeHtml(project.link)}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+      ${hasExternalLink ? `<a href="${escapeHtml(project.link)}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
         ${externalLabel} <span class="link-arrow" aria-hidden="true">→</span>
-      </a>
+      </a>` : ""}
       <a href="${backUrl}" class="btn btn-secondary">Back to ${isReport ? "Tech Reports" : "Software"}</a>
     </div>
   `;

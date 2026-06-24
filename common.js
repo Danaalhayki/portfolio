@@ -18,20 +18,25 @@ function projectPageUrl(slug) {
 
 function createProjectCard(project, index) {
   const detailUrl = projectPageUrl(project.slug);
-  const linkLabel = project.category === "report" ? "Read more" : "View details";
+  const linkLabel = project.category === "report" ? "Read report" : "View project";
   const delay = Math.min(index * 80, 400);
+  const indexLabel = String(index + 1).padStart(2, "0");
 
   return `
-    <article class="project-card reveal" style="transition-delay: ${delay}ms">
-      <span class="project-badge">${project.category === "report" ? "Tech Report" : "Software"}</span>
-      <h4 class="project-title">
-        <a href="${detailUrl}">${escapeHtml(project.title)}</a>
-      </h4>
-      <p class="project-description">${escapeHtml(project.description)}</p>
-      ${renderTags(project.tags)}
-      <div class="project-card-footer">
-        <a href="${detailUrl}" class="project-link">${linkLabel}<span class="link-arrow" aria-hidden="true">→</span></a>
+    <article class="project-row reveal" style="transition-delay: ${delay}ms">
+      <div class="project-row-accent" aria-hidden="true"></div>
+      <span class="project-row-index" aria-hidden="true">${indexLabel}</span>
+      <div class="project-row-main">
+        <span class="project-badge">${project.category === "report" ? "Tech Report" : "Software"}</span>
+        <h4 class="project-row-title">
+          <a href="${detailUrl}">${escapeHtml(project.title)}</a>
+        </h4>
+        <p class="project-row-desc">${escapeHtml(project.description)}</p>
+        ${renderTags(project.tags)}
       </div>
+      <a href="${detailUrl}" class="project-row-go" aria-label="${linkLabel}: ${escapeHtml(project.title)}">
+        <span aria-hidden="true">→</span>
+      </a>
     </article>
   `;
 }
