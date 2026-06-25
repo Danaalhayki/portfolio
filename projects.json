@@ -16,47 +16,167 @@
   },
   {
     "slug": "shellsentry",
-    "title": "ShellSentry — Secure Natural Language to Bash Execution",
-    "description": "Senior project: an AI-powered platform that translates natural language into validated, secure Bash commands for remote Linux execution via SSH.",
+    "title": "ShellSentry — Secure Natural Language to Bash",
+    "description": "AI-powered web app that translates natural language into validated Bash commands and executes them on remote Linux hosts over SSH, with RAG grounding and layered security checks.",
     "content": [
-      "Designed and developed an AI-powered secure command execution platform for Linux environments.",
-      "Implemented natural language processing capabilities to translate user requests into validated Bash commands.",
-      "Developed security controls to prevent unsafe, unauthorized, or malicious command generation.",
-      "Built a command validation layer to verify commands before execution on remote systems via SSH.",
-      "Integrated Retrieval-Augmented Generation (RAG) with FAISS to provide context-aware and secure responses."
+      "Built a full-stack platform that turns plain-English tasks into Bash commands using an OpenAI-compatible LLM.",
+      "Implemented authentication, password policy, and session handling for controlled educational use.",
+      "Added RAG with sentence-transformers and FAISS over a curated command knowledge base for safer generation.",
+      "Validated commands through whitelist, blacklist, and optional read-only policies before SSH execution via Paramiko.",
+      "Returned structured JSON results with human-readable summaries and optional LLM explanations of command output."
     ],
     "category": "coding",
-    "link": "#",
+    "link": "https://github.com/Danaalhayki/ShellSentry",
     "tags": ["Python", "AI", "Cybersecurity", "SSH"]
   },
   {
-    "slug": "secure-messenger",
-    "title": "Secure Messenger",
-    "description": "Cross-platform messaging app with end-to-end encrypted secret chats, biometric auth, and Firebase-backed real-time features.",
+    "slug": "localhost",
+    "title": "localhost — HTTP Server",
+    "description": "HTTP/1.1 web server in Rust with non-blocking I/O, modular architecture, static file serving, uploads, CGI execution, and multi-port support.",
     "content": [
-      "Developed a secure cross-platform messaging application using Flutter and Firebase.",
-      "Implemented end-to-end encrypted (E2EE) secret chats using RSA key exchange and AES-GCM encryption.",
-      "Integrated biometric authentication, group messaging, media sharing, and QR-based contact discovery.",
-      "Configured Firebase Cloud Messaging (FCM) push notifications through Cloud Functions.",
-      "Applied Firestore and Firebase Storage security rules and developed unit tests for core services."
+      "Implemented a single-process, single-threaded HTTP server using epoll (Linux) or kqueue (macOS/BSD).",
+      "Organized the codebase into core, network, protocol, handlers, storage, and CGI execution modules.",
+      "Supported GET, POST, and DELETE with HTTP/1.1 compliance and non-blocking socket operations.",
+      "Handled static files, uploads, transfer encoding, sessions, and cookies.",
+      "Designed for learning low-level server architecture and event-driven networking."
     ],
     "category": "coding",
-    "link": "#",
-    "tags": ["Flutter", "Firebase", "E2EE", "Mobile"]
+    "link": "https://github.com/Danaalhayki/localhost",
+    "tags": ["Rust", "HTTP", "Networking", "Systems"]
   },
   {
-    "slug": "social-network-platform",
-    "title": "Social Network Platform",
-    "description": "Full-stack social platform with profiles, posts, groups, events, and real-time messaging — built with Vue 3, Go, and WebSockets.",
+    "slug": "bomberman-dom",
+    "title": "Bomberman DOM",
+    "description": "Browser-based multiplayer Bomberman clone for 2–4 players, built with a custom JavaScript mini-framework and WebSockets — no Canvas or game engines.",
     "content": [
-      "Developed a full-stack social networking platform featuring profiles, posts, followers, groups, events, and real-time communication.",
-      "Designed and implemented a Go REST API with over 70 endpoints to support platform functionality.",
-      "Built WebSocket services for real-time messaging, notifications, and live updates.",
-      "Implemented privacy controls, media uploads, group invitations, and event RSVP functionality.",
-      "Containerized the application using Docker and deployed it with Nginx."
+      "Developed a real-time multiplayer battle game maintaining 60 FPS with optimized DOM rendering.",
+      "Built a custom mini-framework without Canvas, WebGL, or external game engines.",
+      "Implemented randomized destructible maps, power-ups, safe spawn zones, and match countdown logic.",
+      "Added WebSocket-based real-time chat and player synchronization.",
+      "Focused on performance, WebSocket communication, and multiplayer game mechanics."
     ],
     "category": "coding",
-    "link": "#",
+    "link": "https://github.com/Danaalhayki/bomberman-dom",
+    "tags": ["JavaScript", "WebSockets", "Multiplayer", "DOM"]
+  },
+  {
+    "slug": "rt",
+    "title": "Ray Tracer (rt)",
+    "description": "Photorealistic ray tracing renderer in Rust that generates PPM images with soft shadows, specular highlights, reflections, and gamma correction.",
+    "content": [
+      "Implemented ray tracing that shoots rays from a virtual camera through each pixel into a 3D scene.",
+      "Calculated object intersections, surface normals, and realistic lighting per pixel.",
+      "Added soft shadows, specular highlights, reflections, and gamma-corrected PPM output.",
+      "Built for learning advanced rendering algorithms and 3D graphics fundamentals.",
+      "Structured as a professional-quality Rust graphics project with modular scene handling."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/rt",
+    "tags": ["Rust", "Graphics", "Ray Tracing", "Algorithms"]
+  },
+  {
+    "slug": "smart-road",
+    "title": "Smart Road",
+    "description": "Real-time traffic simulation in Rust modeling vehicles, intersections, and road networks with live statistics and interactive visualization.",
+    "content": [
+      "Built a Rust-based traffic simulation for modeling vehicles and road network behavior.",
+      "Implemented intersection logic and real-time movement of entities across the road system.",
+      "Tracked live statistics to analyze traffic flow and simulation performance.",
+      "Delivered an interactive visualization of road and vehicle dynamics.",
+      "Applied systems programming concepts for performance-oriented simulation software."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/smart-road",
+    "tags": ["Rust", "Simulation", "Algorithms", "Systems"]
+  },
+  {
+    "slug": "multiplayer-fps",
+    "title": "Maze Wars — Multiplayer FPS",
+    "description": "Classic Maze Wars recreation with raycasting 3D graphics, UDP multiplayer for up to 64 players, mini-map, and progressive difficulty levels.",
+    "content": [
+      "Recreated the classic Maze Wars first-person experience using raycasting 3D graphics in Rust.",
+      "Implemented UDP-based client-server multiplayer supporting up to 64 concurrent players.",
+      "Added a real-time mini-map, on-screen FPS counter, and live scoreboard rankings.",
+      "Designed three difficulty levels with progressively harder mazes and more dead ends.",
+      "Optimized rendering to maintain smooth frame rates above 50 FPS during gameplay."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/multiplayer-fps",
+    "tags": ["Rust", "UDP", "Game Dev", "Networking"]
+  },
+  {
+    "slug": "social-network",
+    "title": "Social Network Platform",
+    "description": "Full-stack Facebook-like social network with profiles, posts, groups, events, real-time chat, and notifications — Vue 3 frontend with a Go backend.",
+    "content": [
+      "Developed a full-stack social platform with user registration, JWT authentication, and rich profiles.",
+      "Built a Go REST API with 70+ endpoints plus WebSockets for chat, messaging, and live notifications.",
+      "Implemented posts with media support, followers, groups, invites, events, and privacy controls.",
+      "Containerized services with Docker and deployed behind Nginx.",
+      "Designed as a practical demonstration of scalable full-stack and real-time system architecture."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/social-network",
     "tags": ["Go", "Vue 3", "WebSockets", "Docker"]
+  },
+  {
+    "slug": "wget",
+    "title": "Wget — Command-Line Downloader",
+    "description": "Full-featured GNU Wget–like downloader in Go with mirroring, parallel downloads, rate limiting, background jobs, and progress logging.",
+    "content": [
+      "Reproduced core wget functionality for HTTP/HTTPS file retrieval from the command line.",
+      "Implemented background downloads, rate limiting, and parallel download support.",
+      "Added website mirroring with offline link conversion for local browsing.",
+      "Built progress display and logging aligned with 01-Edu audit requirements.",
+      "Structured as a modular Go CLI tool for networking and systems programming practice."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/wget",
+    "tags": ["Go", "CLI", "HTTP", "Networking"]
+  },
+  {
+    "slug": "push-swap",
+    "title": "Push-Swap",
+    "description": "Sorting algorithm challenge in Go using two stacks and a minimal instruction set, with a checker program to validate solutions.",
+    "content": [
+      "Implemented push-swap to compute optimal instruction sequences that sort integers on stack A using stack B.",
+      "Built a separate checker binary to verify whether a given instruction list sorts the input correctly.",
+      "Applied stack operations and algorithm design to minimize the number of moves.",
+      "Organized the project with separate cmd/checker and cmd/pushswap entry points.",
+      "Focused on algorithm efficiency, edge-case handling, and clean Go project structure."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/push-swap",
+    "tags": ["Go", "Algorithms", "Stacks", "CLI"]
+  },
+  {
+    "slug": "net-cat",
+    "title": "Net-Cat — TCP Chat Server",
+    "description": "Multi-client TCP chat server in Go with nicknames, chat history, timestamps, and concurrent goroutine-based message broadcasting.",
+    "content": [
+      "Built a TCP chat server allowing multiple clients to join a shared room and exchange messages.",
+      "Assigned unique client names on connect and replayed chat history for new participants.",
+      "Stamped each message with timestamps and enforced a configurable connection capacity limit.",
+      "Used goroutines and channels for safe concurrent client handling and broadcast delivery.",
+      "Implemented a netcat-inspired CLI experience for real-time terminal chat."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/net-cat",
+    "tags": ["Go", "TCP", "Concurrency", "Networking"]
+  },
+  {
+    "slug": "graphql",
+    "title": "GraphQL Profile Dashboard",
+    "description": "School profile UI powered by GraphQL queries against the Reboot01 API, with login, personal data sections, and statistics graphs.",
+    "content": [
+      "Created a profile page that queries user data from the Reboot01 GraphQL engine endpoint.",
+      "Implemented authentication so users can sign in and access their own school records securely.",
+      "Displayed identification, XP, grades, audits, skills, and other platform metrics.",
+      "Built a mandatory statistics section with generated graphs from queried data.",
+      "Applied GraphQL query design and frontend data visualization in JavaScript."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/graphql",
+    "tags": ["GraphQL", "JavaScript", "Data Viz", "Web"]
   }
 ]
