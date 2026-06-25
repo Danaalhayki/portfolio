@@ -2,7 +2,7 @@
   {
     "slug": "meridian-fintech-risk",
     "title": "Meridian FinTech — Enterprise Security Risk Assessment",
-    "description": "Comprehensive security risk assessment and compliance framework for a simulated FinTech organization, covering threats, vulnerabilities, and mitigation strategies.",
+    "description": "Apr 2026 – May 2026. Comprehensive security risk assessment and compliance framework for a simulated FinTech organization, covering threats, vulnerabilities, and mitigation strategies.",
     "content": [
       "Conducted a comprehensive security risk assessment for Meridian FinTech Solutions, a simulated FinTech organization.",
       "Identified security threats, vulnerabilities, and potential business impacts across organizational assets.",
@@ -13,6 +13,72 @@
     "category": "report",
     "link": "#",
     "tags": ["Cybersecurity", "Risk Management", "Compliance"]
+  },
+  {
+    "slug": "sijilchain",
+    "title": "SijilChain — Blockchain Vehicle History Verification",
+    "description": "Apr 2026 · Team of 3. Conceptual blockchain DApp to increase transparency in the used-car market by linking full vehicle histories to each VIN.",
+    "content": [
+      "Designed a decentralized application concept aimed at reducing opacity and fraud in pre-owned vehicle sales through verifiable record keeping.",
+      "Reviewed registration and accident-reporting workflows to identify weaknesses in transparency and opportunities for data manipulation.",
+      "Defined the system architecture, stakeholder requirements, and a VIN-based model for tracing a vehicle's lifecycle events.",
+      "Proposed OTP-protected user access paired with immutable blockchain storage to preserve tamper-resistant vehicle history records."
+    ],
+    "category": "report",
+    "link": "#",
+    "tags": ["Blockchain", "DApp", "VIN Tracking", "Security"]
+  },
+  {
+    "slug": "smart-vault",
+    "title": "Smart Vault — Secure Smart Postbox System",
+    "description": "Apr 2025 – May 2025 · Team of 4. Smart delivery vault concept that protects packages through PIN and QR-based access control with mobile tracking.",
+    "content": [
+      "Designed a connected postbox solution to safeguard deliveries using dual-factor access via personal PIN codes and scannable QR credentials.",
+      "Delivered an MVP covering mobile app user journeys and real-time visibility into delivery and pickup status.",
+      "Carried out market research and user validation interviews to sharpen the product direction and underlying business model."
+    ],
+    "category": "report",
+    "link": "#",
+    "tags": ["IoT", "Mobile", "QR Access", "MVP"]
+  },
+  {
+    "slug": "tesla-it-audit",
+    "title": "Tesla IT Audit Plan & Audit Program",
+    "description": "Nov 2025 – Dec 2025 · Team of 4. Risk-based IT audit plan evaluating Tesla's critical technology systems, cybersecurity controls, and high-priority operational domains.",
+    "content": [
+      "Produced a risk-driven IT audit plan focused on assessing mission-critical technology environments and enterprise security safeguards at Tesla.",
+      "Conducted risk analysis and ranked audit priorities across vehicle software, AI systems, cloud infrastructure, and data privacy practices.",
+      "Drafted audit procedures and actionable recommendations to strengthen security posture, regulatory compliance, and operational resilience."
+    ],
+    "category": "report",
+    "link": "#",
+    "tags": ["IT Audit", "Cybersecurity", "Risk Assessment", "Compliance"]
+  },
+  {
+    "slug": "cyber-attack-simulation",
+    "title": "Cyber Attack Simulation Platform",
+    "description": "Nov 2025 – Dec 2025 · Team of 3. Secure cyber range concept for running attack-and-defense exercises in a controlled, training-focused environment.",
+    "content": [
+      "Architected a cyber range platform enabling realistic attack simulations and defensive response practice within a safe, isolated environment.",
+      "Defined system architecture, security requirements, and simulation workflows using SQUARE and STRIDE threat-modeling methodologies.",
+      "Built design models and Figma prototypes for user authentication, simulation management, and post-exercise reporting features."
+    ],
+    "category": "report",
+    "link": "#",
+    "tags": ["Cyber Range", "STRIDE", "SQUARE", "Threat Modeling"]
+  },
+  {
+    "slug": "travel-agency-database",
+    "title": "Travel Agency Database Management System",
+    "description": "Nov 2023 – Dec 2023 · Team of 4. Normalized relational database design for managing travel packages, bookings, flights, hotels, customers, and car rentals.",
+    "content": [
+      "Designed a fully normalized relational schema to support travel packages, reservations, flights, hotels, customer records, and car rental operations.",
+      "Produced ER and EER diagrams and resolved connection traps to ensure accurate entity relationships and data integrity.",
+      "Implemented SQL table structures with primary and foreign keys, constraints, referential relationships, and representative sample datasets."
+    ],
+    "category": "report",
+    "link": "#",
+    "tags": ["SQL", "Database Design", "ER Modeling", "Normalization"]
   },
   {
     "slug": "shellsentry",

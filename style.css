@@ -1078,6 +1078,112 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
 }
 
+/* ---- Experience ---- */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.experience-item {
+  padding: 1.5rem 1.5rem 1.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+  opacity: 0.85;
+}
+
+.experience-item:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.experience-role {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+}
+
+.experience-org {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 0.15rem;
+}
+
+.experience-date {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-faint);
+}
+
+.experience-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-secondary);
+  background: var(--accent-secondary-soft);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.experience-badge--volunteer {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.experience-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.experience-points li {
+  position: relative;
+  padding-left: 1.15rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.experience-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+}
+
 /* ---- Projects ---- */
 .category-header {
   display: flex;
