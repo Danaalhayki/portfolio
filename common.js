@@ -16,9 +16,38 @@ function projectPageUrl(slug) {
   return `project.html?slug=${encodeURIComponent(slug)}`;
 }
 
+function getProjectCategoryMeta(category) {
+  switch (category) {
+    case "report":
+      return {
+        label: "Tech Report",
+        listLabel: "Read report",
+        listUrl: "reports.html",
+        backLabel: "All Tech Reports",
+        navKey: "reports",
+      };
+    case "mobile":
+      return {
+        label: "Mobile App",
+        listLabel: "View app",
+        listUrl: "mobile.html",
+        backLabel: "All Mobile Apps",
+        navKey: "mobile",
+      };
+    default:
+      return {
+        label: "Software",
+        listLabel: "View project",
+        listUrl: "coding.html",
+        backLabel: "All Software Projects",
+        navKey: "coding",
+      };
+  }
+}
+
 function createProjectCard(project, index) {
   const detailUrl = projectPageUrl(project.slug);
-  const linkLabel = project.category === "report" ? "Read report" : "View project";
+  const meta = getProjectCategoryMeta(project.category);
   const delay = Math.min(index * 80, 400);
   const indexLabel = String(index + 1).padStart(2, "0");
 
@@ -27,14 +56,14 @@ function createProjectCard(project, index) {
       <div class="project-row-accent" aria-hidden="true"></div>
       <span class="project-row-index" aria-hidden="true">${indexLabel}</span>
       <div class="project-row-main">
-        <span class="project-badge">${project.category === "report" ? "Tech Report" : "Software"}</span>
+        <span class="project-badge">${meta.label}</span>
         <h4 class="project-row-title">
           <a href="${detailUrl}">${escapeHtml(project.title)}</a>
         </h4>
         <p class="project-row-desc">${escapeHtml(project.description)}</p>
         ${renderTags(project.tags)}
       </div>
-      <a href="${detailUrl}" class="project-row-go" aria-label="${linkLabel}: ${escapeHtml(project.title)}">
+      <a href="${detailUrl}" class="project-row-go" aria-label="${meta.listLabel}: ${escapeHtml(project.title)}">
         <span aria-hidden="true">→</span>
       </a>
     </article>

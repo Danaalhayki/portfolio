@@ -12,34 +12,41 @@ document.addEventListener("DOMContentLoaded", () => {
   if (page === "home") loadHomeProjects();
   if (page === "reports") loadCategoryProjects("report");
   if (page === "coding") loadCategoryProjects("coding");
+  if (page === "mobile") loadCategoryProjects("mobile");
   if (page === "project") loadProjectDetail();
 });
 
 async function loadHomeProjects() {
   const reportContainer = document.getElementById("report-projects");
   const codingContainer = document.getElementById("coding-projects");
+  const mobileContainer = document.getElementById("mobile-projects");
 
   try {
     const projects = await fetchProjects();
     const reports = projects.filter((p) => p.category === "report");
     const coding = projects.filter((p) => p.category === "coding");
+    const mobile = projects.filter((p) => p.category === "mobile");
 
     animateCounter(document.getElementById("stat-reports"), reports.length);
     animateCounter(document.getElementById("stat-coding"), coding.length);
+    animateCounter(document.getElementById("stat-mobile"), mobile.length);
     animateCounter(document.getElementById("stat-total"), projects.length);
 
     const statsBar = document.getElementById("hero-stats-bar");
     if (statsBar && projects.length > 0) {
       statsBar.style.setProperty("--reports-pct", `${(reports.length / projects.length) * 100}%`);
       statsBar.style.setProperty("--coding-pct", `${(coding.length / projects.length) * 100}%`);
+      statsBar.style.setProperty("--mobile-pct", `${(mobile.length / projects.length) * 100}%`);
     }
 
     renderProjects(reportContainer, reports.slice(0, 3), "No tech reports yet.");
     renderProjects(codingContainer, coding.slice(0, 3), "No software projects yet.");
+    renderProjects(mobileContainer, mobile.slice(0, 3), "No mobile apps yet.");
   } catch (error) {
     const message = "Unable to load projects. Please try again later.";
     showError(reportContainer, message);
     showError(codingContainer, message);
+    showError(mobileContainer, message);
     console.error(error);
   }
 }
@@ -47,10 +54,11 @@ async function loadHomeProjects() {
 async function loadCategoryProjects(category) {
   const container = document.getElementById("projects-list");
   const countEl = document.getElementById("page-project-count");
-  const emptyMessage =
-    category === "report"
-      ? "No tech reports yet."
-      : "No software projects yet.";
+  const emptyMessages = {
+    report: "No tech reports yet.",
+    coding: "No software projects yet.",
+    mobile: "No mobile apps yet.",
+  };
 
   try {
     const projects = await fetchProjects();
@@ -60,7 +68,7 @@ async function loadCategoryProjects(category) {
       animateCounter(countEl, filtered.length);
     }
 
-    renderProjects(container, filtered, emptyMessage);
+    renderProjects(container, filtered, emptyMessages[category] || "No projects yet.");
   } catch (error) {
     showError(container, "Unable to load projects. Please try again later.");
     console.error(error);
@@ -89,9 +97,9 @@ async function loadProjectDetail() {
     container.innerHTML = `<div class="project-detail-wrap reveal">${renderProjectDetail(project)}</div>`;
     observeRevealElements(container);
 
+    const meta = getProjectCategoryMeta(project.category);
     document.querySelectorAll(".nav-links a[data-nav]").forEach((link) => {
-      const navKey = project.category === "report" ? "reports" : "coding";
-      link.classList.toggle("nav-active", link.dataset.nav === navKey);
+      link.classList.toggle("nav-active", link.dataset.nav === meta.navKey);
     });
   } catch (error) {
     showError(container, "Unable to load project. Please try again later.");
@@ -99,23 +107,69 @@ async function loadProjectDetail() {
   }
 }
 
+function getDemoEmbedUrl(demoUrl) {
+  if (!demoUrl) return null;
+
+  const driveMatch = demoUrl.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+  if (driveMatch) {
+    return `https://drive.google.com/file/d/${driveMatch[1]}/preview`;
+  }
+
+  return null;
+}
+
+function renderProjectDemo(project) {
+  if (!project.demo) return "";
+
+  const embedUrl = getDemoEmbedUrl(project.demo);
+
+  if (embedUrl) {
+    return `
+      <div class="project-demo">
+        <h2 class="project-demo-title">Screen Recording</h2>
+        <div class="project-demo-frame">
+          <iframe
+            src="${escapeHtml(embedUrl)}"
+            title="${escapeHtml(project.title)} demo video"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <a href="${escapeHtml(project.demo)}" class="project-demo-link" target="_blank" rel="noopener noreferrer">
+          Open in Google Drive <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="project-demo">
+      <a href="${escapeHtml(project.demo)}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        Watch Demo <span class="link-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  `;
+}
+
 function renderProjectDetail(project) {
+  const meta = getProjectCategoryMeta(project.category);
   const isReport = project.category === "report";
-  const backUrl = isReport ? "reports.html" : "coding.html";
-  const backLabel = isReport ? "All Tech Reports" : "All Software Projects";
   const externalLabel = isReport ? "Read Full Report" : "View Repository";
   const contentHtml = (project.content || [])
     .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
     .join("");
 
   const hasExternalLink = project.link && project.link !== "#";
+  const hasDemo = Boolean(project.demo);
 
   return `
-    <a href="${backUrl}" class="back-link"><span aria-hidden="true">&larr;</span> ${backLabel}</a>
-    <span class="project-badge">${isReport ? "Tech Report" : "Software"}</span>
+    <a href="${meta.listUrl}" class="back-link"><span aria-hidden="true">&larr;</span> ${meta.backLabel}</a>
+    <span class="project-badge">${meta.label}</span>
     <h1 class="project-detail-title">${escapeHtml(project.title)}</h1>
     <p class="project-detail-summary">${escapeHtml(project.description)}</p>
     ${renderTags(project.tags)}
+    ${renderProjectDemo(project)}
     <div class="project-detail-content">
       ${contentHtml}
     </div>
@@ -123,7 +177,10 @@ function renderProjectDetail(project) {
       ${hasExternalLink ? `<a href="${escapeHtml(project.link)}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
         ${externalLabel} <span class="link-arrow" aria-hidden="true">→</span>
       </a>` : ""}
-      <a href="${backUrl}" class="btn btn-secondary">Back to ${isReport ? "Tech Reports" : "Software"}</a>
+      ${hasDemo ? `<a href="${escapeHtml(project.demo)}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        Watch Demo <span class="link-arrow" aria-hidden="true">→</span>
+      </a>` : ""}
+      <a href="${meta.listUrl}" class="btn btn-secondary">Back to ${isReport ? "Tech Reports" : project.category === "mobile" ? "Mobile Apps" : "Software"}</a>
     </div>
   `;
 }

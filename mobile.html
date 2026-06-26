@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Technical project details.">
+  <meta name="description" content="Mobile application projects — Flutter and React Native apps built by Dana Hussain AlHayki.">
   <meta name="theme-color" content="#f9f8fc">
-  <title>Project — Technical Portfolio</title>
+  <title>Mobile Apps — Dana Hussain AlHayki</title>
   <script src="theme.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-page="project">
+<body data-page="mobile">
   <header class="site-header">
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <nav class="nav" aria-label="Main navigation">
@@ -40,10 +40,20 @@
   </header>
 
   <main>
-    <section class="section section-detail">
-      <div class="container container-narrow">
-        <div id="project-detail" aria-live="polite">
-          <p class="loading">Loading project…</p>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label"><span class="section-num">01</span> Mobile</p>
+        <h1 class="page-hero-title"><span class="text-gradient">Mobile Application</span> Projects</h1>
+        <p class="page-hero-description">
+          Flutter and React Native apps — games, utilities, and secure messaging built for iOS and Android.
+          <strong id="page-project-count">—</strong> projects.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div id="projects-list" class="projects-grid" aria-live="polite">
+          <p class="loading">Loading projects…</p>
         </div>
       </div>
     </section>

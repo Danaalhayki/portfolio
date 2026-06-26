@@ -244,5 +244,84 @@
     "category": "coding",
     "link": "https://github.com/Danaalhayki/graphql",
     "tags": ["GraphQL", "JavaScript", "Data Viz", "Web"]
+  },
+  {
+    "slug": "twenty-forty-eight",
+    "title": "2048 — Twenty Forty-Eight",
+    "description": "React Native (Expo) implementation of the classic 2048 puzzle with swipe controls, tile merging, animations, and live current/best score tracking.",
+    "content": [
+      "Built a 4×4 grid game that spawns 2 and 4 tiles and supports swiping in four directions with smooth animated moves.",
+      "Merged matching tiles into higher values while updating the score and spawning new tiles after each valid move.",
+      "Ended gameplay when no legal moves remain and added restart plus persistent best-score tracking.",
+      "Used Expo with React Native for cross-platform mobile deployment on Android and iOS.",
+      "Applied mobile UX patterns including haptic feedback and responsive layout for different screen sizes."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/Twenty-forty-eight",
+    "demo": "https://drive.google.com/file/d/1DLo6S_9r-Si8W0qBBWSmsbOuNicqizyI/view?usp=drivesdk",
+    "tags": ["React Native", "Expo", "JavaScript", "Game"]
+  },
+  {
+    "slug": "sky-map",
+    "title": "Sky Map",
+    "description": "Flutter app that renders a real-time sky map on a canvas using GPS, accelerometer, and magnetometer data to position celestial objects.",
+    "content": [
+      "Displays the Sun, Moon, planets, and constellations on a live-updating star field rendered 10 times per second.",
+      "Uses the Provider pattern with geolocator for coordinates and sensors_plus for device orientation.",
+      "Loads celestial data from a local JSON asset and supports tap-to-inspect object descriptions.",
+      "Implemented position math and canvas rendering entirely in Dart for smooth mobile performance.",
+      "Built as a sensor-driven astronomy viewer for learning mobile graphics and hardware integration."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/sky-map",
+    "tags": ["Flutter", "Dart", "GPS", "Sensors"]
+  },
+  {
+    "slug": "chess",
+    "title": "Chess — Multiplayer Mobile",
+    "description": "Full-stack multiplayer chess app with a React Native (Expo) client and backend for real-time matches, move validation, and game sessions.",
+    "content": [
+      "Delivered main menu, waiting room, and interactive game board screens for online and invite-based play.",
+      "Enforced standard chess rules with chess.js, blocking illegal moves and alternating white-first turns.",
+      "Implemented real-time multiplayer via Socket.IO with notifications when opponents move.",
+      "Handled terminal states (checkmate, stalemate, draw) with end-of-game messaging for both players.",
+      "Assigned unique session identifiers for waiting-room matchmaking and game lifecycle management."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/chess",
+    "demo": "https://drive.google.com/file/d/1ok1rpR7IAiuuoqMWPfjmJW7Aui-x18Rx/view?usp=drivesdk",
+    "tags": ["React Native", "TypeScript", "Socket.IO", "Multiplayer"]
+  },
+  {
+    "slug": "stock-market",
+    "title": "StockSim — Stock Market Simulator",
+    "description": "Flutter stock trading simulator with real-time prices, portfolio tracking, charts, and a wallet — built with BLoC, SQLite, and WebSockets.",
+    "content": [
+      "Built StockSim, a mobile trading app for browsing stocks, viewing detail charts, and managing a virtual portfolio.",
+      "Used flutter_bloc for auth, stock, and portfolio state with a dark-themed Material UI.",
+      "Persisted user and market data locally with SQLite and shared preferences.",
+      "Integrated HTTP and WebSocket channels for live price updates and fl_chart for market visualization.",
+      "Implemented login, signup, wallet, and stock detail flows for a complete simulated trading experience."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/Stock-Market",
+    "demo": "https://drive.google.com/file/d/1yNzR58NiY2rtGr0_g0dJ7Owi9vPBe4UP/view?usp=drivesdk",
+    "tags": ["Flutter", "BLoC", "WebSockets", "SQLite"]
+  },
+  {
+    "slug": "secure-messenger",
+    "title": "Secure Messenger",
+    "description": "Privacy-focused Flutter chat app with Firebase, E2EE secret chats, biometric unlock, group messaging, and FCM push notifications.",
+    "content": [
+      "Developed direct, group, and end-to-end encrypted secret chats using RSA-OAEP key wrap and AES-GCM payloads.",
+      "Integrated Firebase Auth, Firestore, Storage, and Cloud Functions for messaging, media, and push delivery.",
+      "Added biometric unlock, username discovery, QR contact sharing, and friend request flows.",
+      "Tracked read receipts, typing indicators, and secure Firestore/Storage access rules.",
+      "Delivered a cross-platform mobile messenger focused on privacy and real-time communication."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/secure-messenger",
+    "demo": "https://drive.google.com/file/d/1oJ-OaD3m1sxniIsFvCTUY1aGCm4xMIl9/view?usp=drivesdk",
+    "tags": ["Flutter", "Firebase", "E2EE", "Mobile"]
   }
 ]
