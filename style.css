@@ -1537,6 +1537,11 @@ img { max-width: 100%; display: block; }
   border: 0;
 }
 
+.project-demo-frame--wide {
+  aspect-ratio: 16 / 9;
+  max-height: none;
+}
+
 .project-demo-link {
   display: inline-flex;
   align-items: center;
@@ -1549,6 +1554,82 @@ img { max-width: 100%; display: block; }
 
 .project-demo-link:hover {
   color: var(--accent);
+}
+
+.project-attachments {
+  margin-bottom: 1.5rem;
+}
+
+.project-attachments-title {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.project-attachments-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.project-attachment {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.95rem 1.1rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.project-attachment:last-child {
+  border-bottom: none;
+}
+
+.project-attachment:hover {
+  background: var(--accent-faint);
+  color: var(--accent);
+}
+
+.project-attachment-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  height: 1.75rem;
+  padding: 0 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.project-attachment-title {
+  flex: 1;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-attachment .link-arrow {
+  color: var(--text-faint);
+  font-size: 0.9rem;
+  transition: transform 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.project-attachment:hover .link-arrow {
+  color: var(--accent);
+  transform: translateX(2px);
 }
 
 .project-detail-content {

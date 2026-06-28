@@ -12,6 +12,24 @@
     ],
     "category": "report",
     "link": "#",
+    "attachments": [
+      {
+        "title": "Risk Assessment Plan",
+        "url": "assets/Risk Assessment Plan.pdf"
+      },
+      {
+        "title": "Risk Mitigation Plan",
+        "url": "assets/Risk Mitigation Plan.pdf"
+      },
+      {
+        "title": "Risk Management Plan (RMP)",
+        "url": "assets/Risk Management Plan (RMP).pdf"
+      },
+      {
+        "title": "Enterprise Risk Presentation",
+        "url": "assets/enterprise-risk-presentation.pdf"
+      }
+    ],
     "tags": ["Cybersecurity", "Risk Management", "Compliance"]
   },
   {
@@ -93,6 +111,8 @@
     ],
     "category": "coding",
     "link": "https://github.com/Danaalhayki/ShellSentry",
+    "site": "https://shellsentry.site",
+    "demo": "https://youtu.be/pmLrjfG8uBw?si=Vd0034ADR1ybtdq7",
     "tags": ["Python", "AI", "Cybersecurity", "SSH"]
   },
   {

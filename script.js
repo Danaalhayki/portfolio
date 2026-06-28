@@ -110,9 +110,24 @@ async function loadProjectDetail() {
 function getDemoEmbedUrl(demoUrl) {
   if (!demoUrl) return null;
 
+  const youtubeMatch = demoUrl.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([^?&/]+)/
+  );
+  if (youtubeMatch) {
+    return {
+      url: `https://www.youtube.com/embed/${youtubeMatch[1]}`,
+      type: "youtube",
+      externalLabel: "Open on YouTube",
+    };
+  }
+
   const driveMatch = demoUrl.match(/drive\.google\.com\/file\/d\/([^/]+)/);
   if (driveMatch) {
-    return `https://drive.google.com/file/d/${driveMatch[1]}/preview`;
+    return {
+      url: `https://drive.google.com/file/d/${driveMatch[1]}/preview`,
+      type: "drive",
+      externalLabel: "Open in Google Drive",
+    };
   }
 
   return null;
@@ -121,23 +136,28 @@ function getDemoEmbedUrl(demoUrl) {
 function renderProjectDemo(project) {
   if (!project.demo) return "";
 
-  const embedUrl = getDemoEmbedUrl(project.demo);
+  const embed = getDemoEmbedUrl(project.demo);
+  const demoTitle = embed?.type === "youtube" ? "Demo Video" : "Screen Recording";
+  const frameClass =
+    embed?.type === "youtube"
+      ? "project-demo-frame project-demo-frame--wide"
+      : "project-demo-frame";
 
-  if (embedUrl) {
+  if (embed) {
     return `
       <div class="project-demo">
-        <h2 class="project-demo-title">Screen Recording</h2>
-        <div class="project-demo-frame">
+        <h2 class="project-demo-title">${demoTitle}</h2>
+        <div class="${frameClass}">
           <iframe
-            src="${escapeHtml(embedUrl)}"
+            src="${escapeHtml(embed.url)}"
             title="${escapeHtml(project.title)} demo video"
-            allow="autoplay; encrypted-media"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
             loading="lazy"
           ></iframe>
         </div>
         <a href="${escapeHtml(project.demo)}" class="project-demo-link" target="_blank" rel="noopener noreferrer">
-          Open in Google Drive <span class="link-arrow" aria-hidden="true">→</span>
+          ${embed.externalLabel} <span class="link-arrow" aria-hidden="true">→</span>
         </a>
       </div>
     `;
@@ -152,6 +172,29 @@ function renderProjectDemo(project) {
   `;
 }
 
+function renderProjectAttachments(project) {
+  if (!project.attachments || project.attachments.length === 0) return "";
+
+  const items = project.attachments
+    .map(
+      (file) => `
+        <a href="${escapeHtml(encodeURI(file.url))}" class="project-attachment" target="_blank" rel="noopener noreferrer">
+          <span class="project-attachment-icon" aria-hidden="true">PDF</span>
+          <span class="project-attachment-title">${escapeHtml(file.title)}</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+      `
+    )
+    .join("");
+
+  return `
+    <div class="project-attachments">
+      <h2 class="project-attachments-title">Report Documents</h2>
+      <div class="project-attachments-list">${items}</div>
+    </div>
+  `;
+}
+
 function renderProjectDetail(project) {
   const meta = getProjectCategoryMeta(project.category);
   const isReport = project.category === "report";
@@ -162,6 +205,8 @@ function renderProjectDetail(project) {
 
   const hasExternalLink = project.link && project.link !== "#";
   const hasDemo = Boolean(project.demo);
+  const hasSite = Boolean(project.site);
+  const hasAttachments = project.attachments && project.attachments.length > 0;
 
   return `
     <a href="${meta.listUrl}" class="back-link"><span aria-hidden="true">&larr;</span> ${meta.backLabel}</a>
@@ -169,6 +214,7 @@ function renderProjectDetail(project) {
     <h1 class="project-detail-title">${escapeHtml(project.title)}</h1>
     <p class="project-detail-summary">${escapeHtml(project.description)}</p>
     ${renderTags(project.tags)}
+    ${renderProjectAttachments(project)}
     ${renderProjectDemo(project)}
     <div class="project-detail-content">
       ${contentHtml}
@@ -176,6 +222,12 @@ function renderProjectDetail(project) {
     <div class="project-detail-actions">
       ${hasExternalLink ? `<a href="${escapeHtml(project.link)}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
         ${externalLabel} <span class="link-arrow" aria-hidden="true">→</span>
+      </a>` : ""}
+      ${hasSite ? `<a href="${escapeHtml(project.site)}" class="btn ${hasExternalLink ? "btn-secondary" : "btn-primary"}" target="_blank" rel="noopener noreferrer">
+        Visit Live Site <span class="link-arrow" aria-hidden="true">→</span>
+      </a>` : ""}
+      ${!hasExternalLink && hasAttachments ? `<a href="${escapeHtml(encodeURI(project.attachments[0].url))}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        View Report <span class="link-arrow" aria-hidden="true">→</span>
       </a>` : ""}
       ${hasDemo ? `<a href="${escapeHtml(project.demo)}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
         Watch Demo <span class="link-arrow" aria-hidden="true">→</span>
