@@ -1,0 +1,419 @@
+[
+  {
+    "slug": "meridian-fintech-risk",
+    "title": "Meridian FinTech — Enterprise Security Risk Assessment",
+    "description": "Apr 2026 – May 2026. Comprehensive security risk assessment and compliance framework for a simulated FinTech organization, covering threats, vulnerabilities, and mitigation strategies.",
+    "content": [
+      "Conducted a comprehensive security risk assessment for Meridian FinTech Solutions, a simulated FinTech organization.",
+      "Identified security threats, vulnerabilities, and potential business impacts across organizational assets.",
+      "Developed structured risk mitigation and countermeasure strategies aligned with industry best practices.",
+      "Evaluated compliance requirements and provided recommendations to strengthen security governance.",
+      "Produced an enterprise-focused risk assessment and compliance framework report."
+    ],
+    "category": "report",
+    "link": "#",
+    "attachments": [
+      {
+        "title": "Risk Assessment Plan",
+        "url": "assets/Risk Assessment Plan.pdf"
+      },
+      {
+        "title": "Risk Mitigation Plan",
+        "url": "assets/Risk Mitigation Plan.pdf"
+      },
+      {
+        "title": "Risk Management Plan (RMP)",
+        "url": "assets/Risk Management Plan (RMP).pdf"
+      },
+      {
+        "title": "Enterprise Risk Presentation",
+        "url": "assets/enterprise-risk-presentation.pdf"
+      }
+    ],
+    "tags": ["Cybersecurity", "Risk Management", "Compliance"]
+  },
+  {
+    "slug": "sijilchain",
+    "title": "SijilChain — Blockchain Vehicle History Verification",
+    "description": "Apr 2026 · Team of 3. Conceptual blockchain DApp to increase transparency in the used-car market by linking full vehicle histories to each VIN.",
+    "content": [
+      "Designed a decentralized application concept aimed at reducing opacity and fraud in pre-owned vehicle sales through verifiable record keeping.",
+      "Reviewed registration and accident-reporting workflows to identify weaknesses in transparency and opportunities for data manipulation.",
+      "Defined the system architecture, stakeholder requirements, and a VIN-based model for tracing a vehicle's lifecycle events.",
+      "Proposed OTP-protected user access paired with immutable blockchain storage to preserve tamper-resistant vehicle history records."
+    ],
+    "category": "report",
+    "link": "#",
+    "demo": "https://drive.google.com/file/d/1_IveYU5QkGQDeI-ycUYkfiHi0caShIoZ/view",
+    "attachments": [
+      {
+        "title": "SijilChain Presentation",
+        "url": "https://drive.google.com/file/d/1xGdPcgtCJI9ZBYxEN4kTOv9TZopUtFOd/view",
+        "type": "Drive"
+      }
+    ],
+    "tags": ["Blockchain", "DApp", "VIN Tracking", "Security"]
+  },
+  {
+    "slug": "smart-vault",
+    "title": "Smart Vault — Secure Smart Postbox System",
+    "description": "Apr 2025 – May 2025 · Team of 4. Smart delivery vault concept that protects packages through PIN and QR-based access control with mobile tracking.",
+    "content": [
+      "Designed a connected postbox solution to safeguard deliveries using dual-factor access via personal PIN codes and scannable QR credentials.",
+      "Delivered an MVP covering mobile app user journeys and real-time visibility into delivery and pickup status.",
+      "Carried out market research and user validation interviews to sharpen the product direction and underlying business model."
+    ],
+    "category": "report",
+    "link": "#",
+    "attachments": [
+      {
+        "title": "Smart Vault Report",
+        "url": "https://drive.google.com/file/d/1HbRgl2mup5RqMxGpB06hSwdg5ujjv3Zw/view",
+        "type": "Drive"
+      },
+      {
+        "title": "Smart Vault Presentation",
+        "url": "https://drive.google.com/file/d/1svNb9LJzoHlGjO6C17OFzwuRUmaNHVWl/view",
+        "type": "Drive"
+      }
+    ],
+    "tags": ["IoT", "Mobile", "QR Access", "MVP"]
+  },
+  {
+    "slug": "tesla-it-audit",
+    "title": "Tesla IT Audit Plan & Audit Program",
+    "description": "Nov 2025 – Dec 2025 · Team of 4. Risk-based IT audit plan evaluating Tesla's critical technology systems, cybersecurity controls, and high-priority operational domains.",
+    "content": [
+      "Produced a risk-driven IT audit plan focused on assessing mission-critical technology environments and enterprise security safeguards at Tesla.",
+      "Conducted risk analysis and ranked audit priorities across vehicle software, AI systems, cloud infrastructure, and data privacy practices.",
+      "Drafted audit procedures and actionable recommendations to strengthen security posture, regulatory compliance, and operational resilience."
+    ],
+    "category": "report",
+    "link": "#",
+    "attachments": [
+      {
+        "title": "Tesla IT Audit Report",
+        "url": "https://drive.google.com/file/d/1B6a5IdqdyzYreHg-F4NNN3PlTt8IuNRF/view",
+        "type": "Drive"
+      },
+      {
+        "title": "Tesla IT Audit Presentation",
+        "url": "https://drive.google.com/file/d/1YY_Z3cToEbIS879sWWUAdbCGBtkxGdfk/view",
+        "type": "Drive"
+      }
+    ],
+    "tags": ["IT Audit", "Cybersecurity", "Risk Assessment", "Compliance"]
+  },
+  {
+    "slug": "cyber-attack-simulation",
+    "title": "Cyber Attack Simulation Platform",
+    "description": "Nov 2025 – Dec 2025 · Team of 3. Secure cyber range concept for running attack-and-defense exercises in a controlled, training-focused environment.",
+    "content": [
+      "Architected a cyber range platform enabling realistic attack simulations and defensive response practice within a safe, isolated environment.",
+      "Defined system architecture, security requirements, and simulation workflows using SQUARE and STRIDE threat-modeling methodologies.",
+      "Built design models and Figma prototypes for user authentication, simulation management, and post-exercise reporting features."
+    ],
+    "category": "report",
+    "link": "#",
+    "attachments": [
+      {
+        "title": "Cyber Attack Simulation Report",
+        "url": "https://drive.google.com/file/d/1V12Rn0mxCOeevg8LMILM7qfBSUcDjqpM/view?usp=sharing",
+        "type": "Drive"
+      },
+      {
+        "title": "Cyber Attack Simulation Presentation",
+        "url": "https://drive.google.com/file/d/1G8Ohve2L7XvE9Dbl0Hr62kZaMcumQQur/view",
+        "type": "Drive"
+      }
+    ],
+    "tags": ["Cyber Range", "STRIDE", "SQUARE", "Threat Modeling"]
+  },
+  {
+    "slug": "travel-agency-database",
+    "title": "Travel Agency Database Management System",
+    "description": "Nov 2023 – Dec 2023 · Team of 4. Normalized relational database design for managing travel packages, bookings, flights, hotels, customers, and car rentals.",
+    "content": [
+      "Designed a fully normalized relational schema to support travel packages, reservations, flights, hotels, customer records, and car rental operations.",
+      "Produced ER and EER diagrams and resolved connection traps to ensure accurate entity relationships and data integrity.",
+      "Implemented SQL table structures with primary and foreign keys, constraints, referential relationships, and representative sample datasets."
+    ],
+    "category": "report",
+    "link": "#",
+    "attachments": [
+      {
+        "title": "Travel Agency Report",
+        "url": "https://drive.google.com/file/d/1T--msJP_SrpCpf2EhRIQU4A-M-JJYV67/view",
+        "type": "Drive"
+      },
+      {
+        "title": "Travel Agency Presentation",
+        "url": "https://drive.google.com/file/d/1m4mapQylt9wXc8LKvWMg1mxwl0kA92lG/view",
+        "type": "Drive"
+      }
+    ],
+    "tags": ["SQL", "Database Design", "ER Modeling", "Normalization"]
+  },
+  {
+    "slug": "youth-city-visitor-system",
+    "title": "Youth City 2030 — Visitor Registration & Tracking System",
+    "description": "Jul 2026 – Aug 2026 · Ushers Committee, Youth Ministry. Two tools for Youth City 2030 events: automated Google Forms & Sheets registration, plus a website timer for visitor session tracking.",
+    "content": [
+      "Built two complementary tools for the Ushers Committee at Youth City 2030: a Google Forms and Sheets registration stack, and a website timer for on-site visitor tracking.",
+      "Automated registration with Google Forms, Google Sheets, and Google Apps Script to manage daily ticket availability, enforce capacity limits, and keep secure registration records.",
+      "Developed a website timer that tracks visitors with unique IDs instead of personal data, supporting privacy-focused occupancy management on site.",
+      "The website timer provides real-time occupancy monitoring, 45-minute session countdowns, interactive visitor cards, 15-minute warning notifications, overtime alerts, and live available-slot tracking.",
+      "Together, the registration automation and website timer improved operational efficiency and visitor flow with a scalable, user-friendly setup for data-driven event monitoring."
+    ],
+    "category": "coding",
+    "link": "#",
+    "demo": "https://drive.google.com/file/d/16NV2QZat9p0T8qAQlqNC8ExeeNbEEzJK/view?usp=sharing",
+    "tags": ["Google Forms", "Google Sheets", "Website Timer", "Apps Script"]
+  },
+  {
+    "slug": "shellsentry",
+    "title": "ShellSentry — Secure Natural Language to Bash",
+    "description": "AI-powered web app that translates natural language into validated Bash commands and executes them on remote Linux hosts over SSH, with RAG grounding and layered security checks.",
+    "content": [
+      "Built a full-stack platform that turns plain-English tasks into Bash commands using an OpenAI-compatible LLM.",
+      "Implemented authentication, password policy, and session handling for controlled educational use.",
+      "Added RAG with sentence-transformers and FAISS over a curated command knowledge base for safer generation.",
+      "Validated commands through whitelist, blacklist, and optional read-only policies before SSH execution via Paramiko.",
+      "Returned structured JSON results with human-readable summaries and optional LLM explanations of command output."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/ShellSentry",
+    "site": "https://shellsentry.site",
+    "demo": "https://youtu.be/pmLrjfG8uBw?si=Vd0034ADR1ybtdq7",
+    "tags": ["Python", "AI", "Cybersecurity", "SSH"]
+  },
+  {
+    "slug": "localhost",
+    "title": "localhost — HTTP Server",
+    "description": "HTTP/1.1 web server in Rust with non-blocking I/O, modular architecture, static file serving, uploads, CGI execution, and multi-port support.",
+    "content": [
+      "Implemented a single-process, single-threaded HTTP server using epoll (Linux) or kqueue (macOS/BSD).",
+      "Organized the codebase into core, network, protocol, handlers, storage, and CGI execution modules.",
+      "Supported GET, POST, and DELETE with HTTP/1.1 compliance and non-blocking socket operations.",
+      "Handled static files, uploads, transfer encoding, sessions, and cookies.",
+      "Designed for learning low-level server architecture and event-driven networking."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/localhost",
+    "tags": ["Rust", "HTTP", "Networking", "Systems"]
+  },
+  {
+    "slug": "bomberman-dom",
+    "title": "Bomberman DOM",
+    "description": "Browser-based multiplayer Bomberman clone for 2–4 players, built with a custom JavaScript mini-framework and WebSockets — no Canvas or game engines.",
+    "content": [
+      "Developed a real-time multiplayer battle game maintaining 60 FPS with optimized DOM rendering.",
+      "Built a custom mini-framework without Canvas, WebGL, or external game engines.",
+      "Implemented randomized destructible maps, power-ups, safe spawn zones, and match countdown logic.",
+      "Added WebSocket-based real-time chat and player synchronization.",
+      "Focused on performance, WebSocket communication, and multiplayer game mechanics."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/bomberman-dom",
+    "tags": ["JavaScript", "WebSockets", "Multiplayer", "DOM"]
+  },
+  {
+    "slug": "rt",
+    "title": "Ray Tracer (rt)",
+    "description": "Photorealistic ray tracing renderer in Rust that generates PPM images with soft shadows, specular highlights, reflections, and gamma correction.",
+    "content": [
+      "Implemented ray tracing that shoots rays from a virtual camera through each pixel into a 3D scene.",
+      "Calculated object intersections, surface normals, and realistic lighting per pixel.",
+      "Added soft shadows, specular highlights, reflections, and gamma-corrected PPM output.",
+      "Built for learning advanced rendering algorithms and 3D graphics fundamentals.",
+      "Structured as a professional-quality Rust graphics project with modular scene handling."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/rt",
+    "tags": ["Rust", "Graphics", "Ray Tracing", "Algorithms"]
+  },
+  {
+    "slug": "smart-road",
+    "title": "Smart Road",
+    "description": "Real-time traffic simulation in Rust modeling vehicles, intersections, and road networks with live statistics and interactive visualization.",
+    "content": [
+      "Built a Rust-based traffic simulation for modeling vehicles and road network behavior.",
+      "Implemented intersection logic and real-time movement of entities across the road system.",
+      "Tracked live statistics to analyze traffic flow and simulation performance.",
+      "Delivered an interactive visualization of road and vehicle dynamics.",
+      "Applied systems programming concepts for performance-oriented simulation software."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/smart-road",
+    "tags": ["Rust", "Simulation", "Algorithms", "Systems"]
+  },
+  {
+    "slug": "multiplayer-fps",
+    "title": "Maze Wars — Multiplayer FPS",
+    "description": "Classic Maze Wars recreation with raycasting 3D graphics, UDP multiplayer for up to 64 players, mini-map, and progressive difficulty levels.",
+    "content": [
+      "Recreated the classic Maze Wars first-person experience using raycasting 3D graphics in Rust.",
+      "Implemented UDP-based client-server multiplayer supporting up to 64 concurrent players.",
+      "Added a real-time mini-map, on-screen FPS counter, and live scoreboard rankings.",
+      "Designed three difficulty levels with progressively harder mazes and more dead ends.",
+      "Optimized rendering to maintain smooth frame rates above 50 FPS during gameplay."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/multiplayer-fps",
+    "tags": ["Rust", "UDP", "Game Dev", "Networking"]
+  },
+  {
+    "slug": "social-network",
+    "title": "Social Network Platform",
+    "description": "Full-stack Facebook-like social network with profiles, posts, groups, events, real-time chat, and notifications — Vue 3 frontend with a Go backend.",
+    "content": [
+      "Developed a full-stack social platform with user registration, JWT authentication, and rich profiles.",
+      "Built a Go REST API with 70+ endpoints plus WebSockets for chat, messaging, and live notifications.",
+      "Implemented posts with media support, followers, groups, invites, events, and privacy controls.",
+      "Containerized services with Docker and deployed behind Nginx.",
+      "Designed as a practical demonstration of scalable full-stack and real-time system architecture."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/social-network",
+    "tags": ["Go", "Vue 3", "WebSockets", "Docker"]
+  },
+  {
+    "slug": "wget",
+    "title": "Wget — Command-Line Downloader",
+    "description": "Full-featured GNU Wget–like downloader in Go with mirroring, parallel downloads, rate limiting, background jobs, and progress logging.",
+    "content": [
+      "Reproduced core wget functionality for HTTP/HTTPS file retrieval from the command line.",
+      "Implemented background downloads, rate limiting, and parallel download support.",
+      "Added website mirroring with offline link conversion for local browsing.",
+      "Built progress display and logging aligned with 01-Edu audit requirements.",
+      "Structured as a modular Go CLI tool for networking and systems programming practice."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/wget",
+    "tags": ["Go", "CLI", "HTTP", "Networking"]
+  },
+  {
+    "slug": "push-swap",
+    "title": "Push-Swap",
+    "description": "Sorting algorithm challenge in Go using two stacks and a minimal instruction set, with a checker program to validate solutions.",
+    "content": [
+      "Implemented push-swap to compute optimal instruction sequences that sort integers on stack A using stack B.",
+      "Built a separate checker binary to verify whether a given instruction list sorts the input correctly.",
+      "Applied stack operations and algorithm design to minimize the number of moves.",
+      "Organized the project with separate cmd/checker and cmd/pushswap entry points.",
+      "Focused on algorithm efficiency, edge-case handling, and clean Go project structure."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/push-swap",
+    "tags": ["Go", "Algorithms", "Stacks", "CLI"]
+  },
+  {
+    "slug": "net-cat",
+    "title": "Net-Cat — TCP Chat Server",
+    "description": "Multi-client TCP chat server in Go with nicknames, chat history, timestamps, and concurrent goroutine-based message broadcasting.",
+    "content": [
+      "Built a TCP chat server allowing multiple clients to join a shared room and exchange messages.",
+      "Assigned unique client names on connect and replayed chat history for new participants.",
+      "Stamped each message with timestamps and enforced a configurable connection capacity limit.",
+      "Used goroutines and channels for safe concurrent client handling and broadcast delivery.",
+      "Implemented a netcat-inspired CLI experience for real-time terminal chat."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/net-cat",
+    "tags": ["Go", "TCP", "Concurrency", "Networking"]
+  },
+  {
+    "slug": "graphql",
+    "title": "GraphQL Profile Dashboard",
+    "description": "School profile UI powered by GraphQL queries against the Reboot01 API, with login, personal data sections, and statistics graphs.",
+    "content": [
+      "Created a profile page that queries user data from the Reboot01 GraphQL engine endpoint.",
+      "Implemented authentication so users can sign in and access their own school records securely.",
+      "Displayed identification, XP, grades, audits, skills, and other platform metrics.",
+      "Built a mandatory statistics section with generated graphs from queried data.",
+      "Applied GraphQL query design and frontend data visualization in JavaScript."
+    ],
+    "category": "coding",
+    "link": "https://github.com/Danaalhayki/graphql",
+    "tags": ["GraphQL", "JavaScript", "Data Viz", "Web"]
+  },
+  {
+    "slug": "twenty-forty-eight",
+    "title": "2048 — Twenty Forty-Eight",
+    "description": "React Native (Expo) implementation of the classic 2048 puzzle with swipe controls, tile merging, animations, and live current/best score tracking.",
+    "content": [
+      "Built a 4×4 grid game that spawns 2 and 4 tiles and supports swiping in four directions with smooth animated moves.",
+      "Merged matching tiles into higher values while updating the score and spawning new tiles after each valid move.",
+      "Ended gameplay when no legal moves remain and added restart plus persistent best-score tracking.",
+      "Used Expo with React Native for cross-platform mobile deployment on Android and iOS.",
+      "Applied mobile UX patterns including haptic feedback and responsive layout for different screen sizes."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/Twenty-forty-eight",
+    "demo": "https://drive.google.com/file/d/1DLo6S_9r-Si8W0qBBWSmsbOuNicqizyI/view?usp=drivesdk",
+    "tags": ["React Native", "Expo", "JavaScript", "Game"]
+  },
+  {
+    "slug": "sky-map",
+    "title": "Sky Map",
+    "description": "Flutter app that renders a real-time sky map on a canvas using GPS, accelerometer, and magnetometer data to position celestial objects.",
+    "content": [
+      "Displays the Sun, Moon, planets, and constellations on a live-updating star field rendered 10 times per second.",
+      "Uses the Provider pattern with geolocator for coordinates and sensors_plus for device orientation.",
+      "Loads celestial data from a local JSON asset and supports tap-to-inspect object descriptions.",
+      "Implemented position math and canvas rendering entirely in Dart for smooth mobile performance.",
+      "Built as a sensor-driven astronomy viewer for learning mobile graphics and hardware integration."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/sky-map",
+    "tags": ["Flutter", "Dart", "GPS", "Sensors"]
+  },
+  {
+    "slug": "chess",
+    "title": "Chess — Multiplayer Mobile",
+    "description": "Full-stack multiplayer chess app with a React Native (Expo) client and backend for real-time matches, move validation, and game sessions.",
+    "content": [
+      "Delivered main menu, waiting room, and interactive game board screens for online and invite-based play.",
+      "Enforced standard chess rules with chess.js, blocking illegal moves and alternating white-first turns.",
+      "Implemented real-time multiplayer via Socket.IO with notifications when opponents move.",
+      "Handled terminal states (checkmate, stalemate, draw) with end-of-game messaging for both players.",
+      "Assigned unique session identifiers for waiting-room matchmaking and game lifecycle management."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/chess",
+    "demo": "https://drive.google.com/file/d/1ok1rpR7IAiuuoqMWPfjmJW7Aui-x18Rx/view?usp=drivesdk",
+    "tags": ["React Native", "TypeScript", "Socket.IO", "Multiplayer"]
+  },
+  {
+    "slug": "stock-market",
+    "title": "StockSim — Stock Market Simulator",
+    "description": "Flutter stock trading simulator with real-time prices, portfolio tracking, charts, and a wallet — built with BLoC, SQLite, and WebSockets.",
+    "content": [
+      "Built StockSim, a mobile trading app for browsing stocks, viewing detail charts, and managing a virtual portfolio.",
+      "Used flutter_bloc for auth, stock, and portfolio state with a dark-themed Material UI.",
+      "Persisted user and market data locally with SQLite and shared preferences.",
+      "Integrated HTTP and WebSocket channels for live price updates and fl_chart for market visualization.",
+      "Implemented login, signup, wallet, and stock detail flows for a complete simulated trading experience."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/Stock-Market",
+    "demo": "https://drive.google.com/file/d/1yNzR58NiY2rtGr0_g0dJ7Owi9vPBe4UP/view?usp=drivesdk",
+    "tags": ["Flutter", "BLoC", "WebSockets", "SQLite"]
+  },
+  {
+    "slug": "secure-messenger",
+    "title": "Secure Messenger",
+    "description": "Privacy-focused Flutter chat app with Firebase, E2EE secret chats, biometric unlock, group messaging, and FCM push notifications.",
+    "content": [
+      "Developed direct, group, and end-to-end encrypted secret chats using RSA-OAEP key wrap and AES-GCM payloads.",
+      "Integrated Firebase Auth, Firestore, Storage, and Cloud Functions for messaging, media, and push delivery.",
+      "Added biometric unlock, username discovery, QR contact sharing, and friend request flows.",
+      "Tracked read receipts, typing indicators, and secure Firestore/Storage access rules.",
+      "Delivered a cross-platform mobile messenger focused on privacy and real-time communication."
+    ],
+    "category": "mobile",
+    "link": "https://github.com/Danaalhayki/secure-messenger",
+    "demo": "https://drive.google.com/file/d/1oJ-OaD3m1sxniIsFvCTUY1aGCm4xMIl9/view?usp=drivesdk",
+    "tags": ["Flutter", "Firebase", "E2EE", "Mobile"]
+  }
+]

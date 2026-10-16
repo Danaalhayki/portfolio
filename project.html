@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technical project details.">
+  <meta name="theme-color" content="#f9f8fc">
+  <title>Project — Technical Portfolio</title>
+    <script src="theme.js"></script>
+  <script src="i18n.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="project">
+  <header class="site-header">
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <nav class="nav" aria-label="Main navigation" data-i18n-aria="nav.aria">
+      <a href="index.html" class="nav-logo"><span class="logo-mark" aria-hidden="true"></span> Dana AlHayki</a>
+      <div class="nav-links-wrap">
+                <ul class="nav-links">
+          <li><a href="index.html#about" data-nav="home" data-i18n="nav.about">About</a></li>
+          <li><a href="reports.html" data-nav="reports" data-i18n="nav.reports">Tech Reports</a></li>
+          <li><a href="coding.html" data-nav="coding" data-i18n="nav.software">Software</a></li>
+          <li><a href="mobile.html" data-nav="mobile" data-i18n="nav.mobile">Mobile</a></li>
+          <li><a href="index.html#skills" data-nav="home" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="index.html#contact" data-nav="home" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-end">
+        <button type="button" class="lang-toggle" data-i18n-aria="lang.aria" data-i18n-title="lang.aria" aria-label="Switch to Arabic" title="Switch to Arabic">عربي</button>
+        <button type="button" class="theme-toggle" data-i18n-aria="theme.toggle" data-i18n-title="theme.toggle" aria-label="Switch theme">
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+        </button>
+        <button class="nav-toggle" data-i18n-aria="menu.toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section section-detail">
+      <div class="container container-narrow">
+        <div id="project-detail" aria-live="polite">
+          <p class="loading" data-i18n="loading.project">Loading project…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand"><span class="logo-mark" aria-hidden="true"></span> Dana AlHayki</span>
+                <ul class="footer-links">
+          <li><a href="index.html#about" data-i18n="footer.about">About</a></li>
+          <li><a href="reports.html" data-i18n="footer.reports">Tech Reports</a></li>
+          <li><a href="coding.html" data-i18n="footer.software">Software</a></li>
+          <li><a href="mobile.html" data-i18n="footer.mobile">Mobile</a></li>
+          <li><a href="index.html#contact" data-i18n="footer.contact">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Dana Hussain AlHayki</p>
+    </div>
+  </footer>
+
+  <script src="projects-ar.js"></script>
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
